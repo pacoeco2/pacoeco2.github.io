@@ -406,12 +406,15 @@
       align-items:center;
       flex-direction:column;
       transition: left .7s; }
+      @media (max-width: 500px) {
+        .cardProyects-overlay {
+          height: 10vw; } }
       .cardProyects-overlay-heading {
         font-family: "Nunito", sans-serif;
         font-size: 50px;
         font-weight: 300;
         letter-spacing: 10px;
-        text-transform: capatalize; }
+        text-transform: capitalize; }
         @media (max-width: 1300px) {
           .cardProyects-overlay-heading {
             font-size: 40px; } }
@@ -420,10 +423,11 @@
             font-size: 30px; } }
         @media (max-width: 650px) {
           .cardProyects-overlay-heading {
-            font-size: 20px; } }
+            font-size: 17px; } }
         @media (max-width: 500px) {
           .cardProyects-overlay-heading {
-            display: none; } }
+            font-size: 15px;
+           } }
       .cardProyects-overlay-paragraph {
         font-family: "Josefin Sans", sans-serif;
         font-size: 30px;
@@ -437,7 +441,7 @@
             font-size: 25px; } }
         @media (max-width: 900px) {
           .cardProyects-overlay-paragraph {
-            font-size: 20px; } }
+            font-size: 17px; } }
         @media (max-width: 650px) {
           .cardProyects-overlay-paragraph {
             font-size: 15px; } }
@@ -449,7 +453,7 @@
         height: 30px;
         color: #d4ab55;
         background-color: #fff;
-        font-family: "Josefin Sans", sans-serif;
+        font-family: "Nunito", sans-serif;
         font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
@@ -467,7 +471,7 @@
           .cardProyects-overlay-btn {
             font-size: 8px;
             width: 80px;
-            height: 15px; } }
+            height: 10px; } }
     .card-img {
       object-fit:contain;
       opacity: .5; }
@@ -507,9 +511,6 @@
             @media (max-width: 650px) {
               .card-overlay-heading {
                 font-size: 10px; } }
-            @media (max-width: 500px) {
-              .card-overlay-heading {
-                display: none; } }
           .card-overlay-paragraph {
             font-family: "Josefin Sans", sans-serif;
             font-size: 30px;
